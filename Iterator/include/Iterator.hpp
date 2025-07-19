@@ -23,6 +23,16 @@ private:
     size_t currentPosition;
 };
 
+class SweetsIterator : public Iterator {
+public:
+    SweetsIterator(SweetsShop* shop);
+    Product *getNext() override;
+    bool hasMore() override;
+private:    
+    SweetsShop* m_shop;
+    size_t currentPosition;
+};
+
 
 
 #endif

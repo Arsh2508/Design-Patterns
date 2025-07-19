@@ -23,3 +23,24 @@ bool ElectoronicsIterator::hasMore()
     }
     return false;
 }
+
+SweetsIterator::SweetsIterator(SweetsShop *shop)
+    : m_shop{shop}
+    , currentPosition{0}
+{}
+
+Product *SweetsIterator::getNext()
+{
+    if(hasMore()){
+        return &m_shop->getProducts()[currentPosition++];
+    }
+    return nullptr;
+}
+
+bool SweetsIterator::hasMore()
+{
+    if(currentPosition < m_shop->getProducts().size()){
+        return true;
+    }
+    return false;
+}
