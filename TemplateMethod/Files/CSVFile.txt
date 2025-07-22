@@ -1,0 +1,9 @@
+Name,Age,Country
+Name: Alice, Age: 30, Country: USA
+Name: Bob, Age: 25, Country: Canada
+Name: Charlie, Age: 35, Country: UK
+Name: Diana, Age: 28, Country: Germany
+Name: Ethan, Age: 40, Country: Australia
+Name: Fatima, Age: 32, Country: UAE
+Name: George, Age: 29, Country: France
+Name: Hana, Age: 23, Country: Japan
